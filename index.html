@@ -712,19 +712,27 @@ function showSuccess() {
   document.getElementById('co-success-section').style.display = 'block';
 }
 
+
 function handleSubmit() {
   var emailEl = document.getElementById('email-input');
-  emailVal    = emailEl ? emailEl.value.trim() : '';
+  var emailVal = emailEl ? emailEl.value.trim() : '';
 
   if (!emailVal || emailVal.indexOf('@') === -1) {
     if (emailEl) {
       emailEl.focus();
       emailEl.style.borderColor = '#E91E63';
-      emailEl.style.boxShadow   = '0 0 0 3px rgba(233,30,99,.25)';
-      setTimeout(function() { emailEl.style.borderColor=''; emailEl.style.boxShadow=''; }, 2000);
+      emailEl.style.boxShadow = '0 0 0 3px rgba(233,30,99,.25)';
+      setTimeout(function() {
+        emailEl.style.borderColor = '';
+        emailEl.style.boxShadow = '';
+      }, 2000);
     }
     return;
   }
+
+  // Abre LastLink direto — sem animação, sem delay
+  window.open('https://lastlink.com/p/CCDF222CD/checkout-payment/', '_blank');
+}
 
   var btn       = document.getElementById('submit-btn');
   btn.textContent = 'Gerando pagamento...';
