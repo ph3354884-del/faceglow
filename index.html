@@ -340,7 +340,25 @@ footer{position:relative;z-index:2;border-top:1px solid rgba(248,215,232,.07);pa
         <div class="offer-feature">Suporte dedicado via chat</div>
       </div>
       <button class="big-cta" onclick="showCheckout()">✦ Começar Agora — R$ 19,90</button>
-      <p class="guarantee-row">🔒 Pagamento 100% seguro via LastLink · Garantia de 7 dias</p>
+
+      <!-- SELOS LANDING PAGE -->
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;margin-top:1.75rem">
+        <div style="display:flex;flex-direction:column;align-items:center;gap:.4rem;background:rgba(34,197,94,.07);border:1.5px solid rgba(34,197,94,.3);border-radius:16px;padding:1rem 1.4rem;min-width:130px">
+          <span style="font-size:2rem">🔒</span>
+          <span style="font-size:.82rem;font-weight:700;color:#4ade80;text-align:center">Pagamento<br>100% Seguro</span>
+          <span style="font-size:.68rem;color:rgba(255,255,255,.4);text-align:center">SSL 256-bit</span>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:.4rem;background:rgba(233,30,99,.07);border:1.5px solid rgba(233,30,99,.3);border-radius:16px;padding:1rem 1.4rem;min-width:130px">
+          <span style="font-size:2rem">🛡️</span>
+          <span style="font-size:.82rem;font-weight:700;color:#F8D7E8;text-align:center">Garantia<br>de 7 Dias</span>
+          <span style="font-size:.68rem;color:rgba(255,255,255,.4);text-align:center">100% do dinheiro de volta</span>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:.4rem;background:rgba(248,215,232,.05);border:1.5px solid rgba(248,215,232,.2);border-radius:16px;padding:1rem 1.4rem;min-width:130px">
+          <span style="font-size:2rem">⚡</span>
+          <span style="font-size:.82rem;font-weight:700;color:#F8D7E8;text-align:center">Acesso<br>Imediato</span>
+          <span style="font-size:.68rem;color:rgba(255,255,255,.4);text-align:center">Após confirmação</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -393,11 +411,25 @@ footer{position:relative;z-index:2;border-top:1px solid rgba(248,215,232,.07);pa
           </div>
         </div>
         <button class="co-submit" id="submit-btn" onclick="handleSubmit()">✦ Finalizar Minha Transformação</button>
-        <p style="text-align:center;font-size:.72rem;color:rgba(255,255,255,.35);margin-top:.6rem">Você será redirecionada para o checkout seguro da <strong style="color:rgba(233,30,99,.6)">LastLink</strong></p>
-        <div class="co-trust-row">
-          <span class="co-trust-item">🔒 SSL 256-bit</span>
-          <span class="co-trust-item">✦ Dados criptografados</span>
-          <span class="co-trust-item">🛡️ Compra segura</span>
+
+        <!-- SELOS CHECKOUT -->
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin-top:1.25rem">
+          <div style="display:flex;align-items:center;gap:.75rem;background:rgba(34,197,94,.07);border:1.5px solid rgba(34,197,94,.3);border-radius:14px;padding:.85rem 1rem">
+            <span style="font-size:1.75rem;flex-shrink:0">🔒</span>
+            <div><div style="font-size:.8rem;font-weight:700;color:#4ade80;line-height:1.3">Pagamento 100% Seguro</div><div style="font-size:.68rem;color:rgba(255,255,255,.4);margin-top:2px">Criptografia SSL 256-bit</div></div>
+          </div>
+          <div style="display:flex;align-items:center;gap:.75rem;background:rgba(233,30,99,.07);border:1.5px solid rgba(233,30,99,.3);border-radius:14px;padding:.85rem 1rem">
+            <span style="font-size:1.75rem;flex-shrink:0">🛡️</span>
+            <div><div style="font-size:.8rem;font-weight:700;color:#F8D7E8;line-height:1.3">Garantia de 7 Dias</div><div style="font-size:.68rem;color:rgba(255,255,255,.4);margin-top:2px">100% do dinheiro de volta</div></div>
+          </div>
+          <div style="display:flex;align-items:center;gap:.75rem;background:rgba(248,215,232,.05);border:1.5px solid rgba(248,215,232,.15);border-radius:14px;padding:.85rem 1rem">
+            <span style="font-size:1.75rem;flex-shrink:0">⚡</span>
+            <div><div style="font-size:.8rem;font-weight:700;color:#F8D7E8;line-height:1.3">Acesso Imediato</div><div style="font-size:.68rem;color:rgba(255,255,255,.4);margin-top:2px">Após confirmação do pag.</div></div>
+          </div>
+          <div style="display:flex;align-items:center;gap:.75rem;background:rgba(248,215,232,.05);border:1.5px solid rgba(248,215,232,.15);border-radius:14px;padding:.85rem 1rem">
+            <span style="font-size:1.75rem;flex-shrink:0">✦</span>
+            <div><div style="font-size:.8rem;font-weight:700;color:#F8D7E8;line-height:1.3">Dados Protegidos</div><div style="font-size:.68rem;color:rgba(255,255,255,.4);margin-top:2px">Privacidade garantida</div></div>
+          </div>
         </div>
         <div class="co-lastlink">Pagamento processado por<span>LastLink</span></div>
       </div>
